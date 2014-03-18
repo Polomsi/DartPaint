@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+canvas{
+  width: 100px;
+  height: 100px;
+  border: 1px solid gray;
+}
