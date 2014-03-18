@@ -7,7 +7,21 @@
     <link rel="stylesheet" href="dartpaint.css">
   </head>
   <body>
-  <nav></nav>
+  <nav id="barraMenu">
+    <ul>
+      <li>archivo</li>
+    </ul>
+  </nav>
+  <nav id="menuHerramientas">
+    <div id="menuIzquierda">
+      <button class="herramienta">Lapiz</button>
+      <button class="herramienta">Goma</button>
+    </div>
+    <div id="menuDerecha">
+      <button class="herramienta">Pincel</button>
+      <button class="herramienta">Rellenar</button>
+    </div> 
+  </nav>
   <canvas></canvas>
     <script type="application/dart" src="dartpaint.dart"></script>
     <script src="packages/browser/dart.js"></script>
