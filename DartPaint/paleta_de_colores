@@ -1,0 +1,21 @@
+import 'dart:html';
+
+void main() {
+  InputElement rojo = querySelector("#rojo");
+  InputElement verde = querySelector("#verde");
+  InputElement azul = querySelector("#azul");
+  querySelector("#lienzo").style.background = "rgb(0,0,0)";
+  rojo.onChange.listen((e) => cambiar());
+  verde.onChange.listen((e) => cambiar());
+  azul.onChange.listen((e) => cambiar());
+}
+void cambiar(){
+  InputElement rojo = querySelector("#rojo");
+  InputElement verde = querySelector("#verde");
+  InputElement azul = querySelector("#azul");
+  int valorRojo = int.parse(rojo.value);
+  int valorVerde = int.parse(verde.value);
+  int valorAzul = int.parse(azul.value);
+  //querySelector("#texto").text = "${valorRojo} de rojo.";
+  querySelector("#lienzo").style.background = "rgb(${valorRojo},${valorVerde},${valorAzul})";
+}
